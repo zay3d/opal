@@ -1,6 +1,7 @@
 import { getUserProfile, getVideoComments } from '@/actions/user'
 import { getPreviewVideo } from '@/actions/workspace'
 import VideoPreview from '@/components/global/videos/preview'
+
 import {
   dehydrate,
   HydrationBoundary,
@@ -33,7 +34,9 @@ const VideoPage = async ({ params: { videoId } }: Props) => {
 
   return (
     <HydrationBoundary state={dehydrate(query)}>
-      <VideoPreview videoId={videoId} />
+      <div className="px-10">
+        <VideoPreview videoId={videoId} />
+      </div>
     </HydrationBoundary>
   )
 }

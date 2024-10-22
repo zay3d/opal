@@ -16,7 +16,7 @@ const Home = async (props: Props) => {
       <h1 className="text-2xl font-bold">A Message From The Opal Team</h1>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 md:w-1/2">
-        {/* {videos.status === 200
+        {videos.status === 200
           ? videos.data?.map((video) => (
               <VideoCard
                 key={video.id}
@@ -24,7 +24,7 @@ const Home = async (props: Props) => {
                 workspaceId={video.workSpaceId!}
               />
             ))
-          : ''} */}
+          : ''}
         <HowToPost
           title={post?.title}
           html={post?.content}
